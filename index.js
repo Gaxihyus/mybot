@@ -269,6 +269,10 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
 
             let replies = ["Quem ta usando meu nome em vão ae?", message.author + ", falou de mim?", "o q tem eu?", "kkk eae men"];
 
+            if (message.content.includes("yeet") || message.content.includes("YEET") || message.content.includes("Yeet") || message.content.includes("Yeet!")){
+
+                let replies = ["YEET", "OOOOH BOY"];
+    
             if(!message.content.includes(prefix)){
                 if(message.content.includes("gay") || message.content.includes("GAY") || message.content.includes("Gay") || message.content.includes("guei")){
                     message.channel.send("vc q é gay, " + message.author + ":stuck_out_tongue_winking_eye:");
