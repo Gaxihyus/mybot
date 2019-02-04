@@ -430,4 +430,4 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
 
 
     });
-client.login(token);
+client.login(process.env.TOKEN);
