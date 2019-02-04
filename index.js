@@ -59,11 +59,8 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                     message.channel.send("N-não é como se eu quisesse respoder suas mensagens nem nada assim, b-BAKA!!! :flushed: ");
 
                 }
-                if(message.content.includes("vc quer voltar pro alguem?") || message.content.includes("vc e tsundere") || message.content.includes("voce é tsundere")|| message.content.includes("voce e tsundere")|| message.content.includes("tu é tsundere")|| message.content.includes("tu e tsundere")){
-
-                    message.channel.send("olha, não conta pro pirik mas EU QUERO VOLTAR PRA TU ALGUEM. ELE MATOU MEU PAI E EU QUERO VINGANÇAAAAAAA");
-
-                }
+               
+                
                 else{
 
                     message.channel.sendMessage(replies[Math.floor(Math.random()*replies.length)])
@@ -268,7 +265,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
 
             
          }
-         if (message.content.includes("bot do capeta") || message.content.includes("bot do capeta") || message.content.includes("Bot do capeta") || message.content.includes("BOT DO CAPETA")){
+         if (message.content.includes("DevAtomo") || message.content.includes("Atomo") || message.content.includes("atomo") || message.content.includes("devatomo")){
 
             let replies = ["Quem ta usando meu nome em vão ae?", message.author + ", falou de mim?", "o q tem eu?", "kkk eae men"];
 
