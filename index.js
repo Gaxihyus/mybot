@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js"); // API Discord.JS (Comandos)
+﻿ const Discord = require("discord.js"); // API Discord.JS (Comandos)
 const fs = require("fs");
 const math = require("mathjs");
 var client = new Discord.Client(); // Criar uma nova Client
