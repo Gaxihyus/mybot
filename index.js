@@ -272,7 +272,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
         // yeet
         if (message.content.includes("YEET")){
 
-            let replies = ["YEEEEEEEEEEEEET"];    
+            let replies = ["YEET", message.author + "OH BOY"];    
 
             if(!message.content.includes(prefix)){
                 if(message.content.includes("gay") || message.content.includes("GAY") || message.content.includes("Gay") || message.content.includes("guei")){
