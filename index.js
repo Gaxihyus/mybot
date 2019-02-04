@@ -268,6 +268,11 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
          if (message.content.includes("DevAtomo") || message.content.includes("Atomo") || message.content.includes("atomo") || message.content.includes("devatomo")){
 
             let replies = ["Quem ta usando meu nome em vão ae?", message.author + ", falou de mim?", "o q tem eu?", "kkk eae men"];
+        
+        // yeet
+        if (message.content.includes("YEET")){
+
+            let replies = ["YEEEEEEEEEEEEET"];    
 
             if(!message.content.includes(prefix)){
                 if(message.content.includes("gay") || message.content.includes("GAY") || message.content.includes("Gay") || message.content.includes("guei")){
