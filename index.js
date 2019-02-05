@@ -10,6 +10,7 @@ const config = require('./config.json');
 var prefix = config.prefix; // Prefixo de comandos, isso aqui pode ser mudado facilmente. como por exemplo; !help, &help.
 var token = config.token; // Token do BOT isso aqui é extremamente importante!!! Portanto tenha cuidado para não apagar ou mandar para alguém por acidente, se não qualquer pessoa tem acesso aos códigos do bot!!!
 var Dark = config.Dark;
+var giveMeAJoke = require('give-me-a-joke');
 
 client.on("ready", function () { // Evento "quando a client estiver pronta/ligada" função:
 client.on('message', message=> {
@@ -357,6 +358,13 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                 
         }
          
+        if(command === prefix + "joke")
+        {
+            giveMeAJoke.getRandomDadJoke (function(joke) {
+                message.channel.send(joke);
+           });
+        }
+
         if(command === prefix + "msg"){
     
             if(args[1]){
