@@ -365,7 +365,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
             else{
                 message.channel.send("Por favor, digite uma mensagem!");
                 }
-                message.delete();
+            message.delete();
         }
                   
        
