@@ -22,7 +22,7 @@ client.on('message', message=> {
     /*-= STATUS DO BOT =-*/
    /*-=-=-=-=-=-=-=-=-=*/
     setInterval(function() {
-        let statuses = ["a zoeira nesse servidor", "jogos mais caros que os seus", "Jogos que vc quer ter", "Mineirinho Ultra Adventures", "Hentaikey.com", "Mu"]; // Status do Dark Code que atualizam a cada 1 minuto. Para adicionar um novo apenas acrescente com vírgula... exemplo; let statuses = ["Dark Code™ | &help", "oi", "sou um bot lescal com nescau :3"];
+        let statuses = ["a zoeira nesse servidor", "jogos mais caros que os seus", "Jogos que vc quer ter", "Mineirinho Ultra Adventures", "Mu"]; // Status do Dark Code que atualizam a cada 1 minuto. Para adicionar um novo apenas acrescente com vírgula... exemplo; let statuses = ["Dark Code™ | &help", "oi", "sou um bot lescal com nescau :3"];
         let status = statuses[Math.floor(Math.random()*statuses.length)]
  
         client.user.setPresence({game: {name: status }, status: 'online' });
