@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "discord.js": "^11.4.2",
+    "give-me-a-joke": "^0.1.2",
     "mathjs": "^5.1.2"
   }
 }
