@@ -2,7 +2,7 @@
 const fs = require("fs");
 const math = require("mathjs");
 var client = new Discord.Client(); // Criar uma nova Client
-j
+var giveMeAJoke = require('give-me-a-joke');
 
 
 // Configuração
