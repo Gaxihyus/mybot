@@ -363,6 +363,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                 message.channel.send(args.slice(1).join(" "));
             }
             else{
+                message.delete();
                 message.channel.send("Por favor, digite uma mensagem!");
                 }
             
