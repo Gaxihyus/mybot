@@ -149,13 +149,47 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
         }
 
         if(command === prefix+"vlw") {
-            message.reply(" não tem por onde! <:chris:404439721968795648>");
+            message.reply(" não tem por onde!");
          }
          if(command === prefix+"vcentendeu"){
 
             message.channel.send("<:wat:404459079415889933>");
 
          }
+
+         if (command === prefix + "roll") {
+
+            if (args[2]) {
+    
+                if (isNaN(args[1]) || isNaN(args[2])) {
+    
+                    message.channel.send("<:wat:404459079415889933>");
+                    message.channel.send("Desde qnd isso é número véi?");
+    
+                }
+                else {
+    
+                    if (parseInt(args[1]) >= parseInt(args[2])) {
+    
+                        message.channel.send("<:fred:404438414201454594>");
+                        message.channel.send("O número mínimo precisa ser maior que o número máximo, ou vc fugiu da escola?");
+    
+                    }
+                    else {
+                        var num = Math.floor(Math.random() * parseInt(args[2])) + parseInt(args[1]);
+                        message.channel.send("Saiu o número: " + num);
+                    }
+    
+                }
+    
+    
+            }
+            else {
+                message.channel.send("Opa!\nUse **" + prefix + "roll** (numero mínimo) (número máximo) pra isso funcionar!");
+            }
+    
+        }
+
          if(command === prefix + "funfacts"){
              let replies = ["https://cdn.discordapp.com/attachments/404058102565044234/493836015576940545/WhatsApp_Image_2018-09-24_at_13.47.00.jpeg",
             "https://www.raiseyourbrain.com/wp-content/uploads/2015/01/fun-facts-about-pandas-26-300x200.jpg?x84682", "https://piximus.net/media/20475/fun-facts-1.jpg",
