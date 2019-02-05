@@ -2,15 +2,14 @@
 const fs = require("fs");
 const math = require("mathjs");
 var client = new Discord.Client(); // Criar uma nova Client
-
+j
 
 
 // Configuração
 const config = require('./config.json');
-var prefix = config.prefix; // Prefixo de comandos, isso aqui pode ser mudado facilmente. como por exemplo; !help, &help.
-var token = config.token; // Token do BOT isso aqui é extremamente importante!!! Portanto tenha cuidado para não apagar ou mandar para alguém por acidente, se não qualquer pessoa tem acesso aos códigos do bot!!!
-var Dark = config.Dark;
-var giveMeAJoke = require('give-me-a-joke');
+var prefix = config.prefix;
+var token = config.token; 
+
 
 client.on("ready", function () { // Evento "quando a client estiver pronta/ligada" função:
 client.on('message', message=> {
