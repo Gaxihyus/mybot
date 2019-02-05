@@ -176,7 +176,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                     }
                     else {
                         var num = Math.floor(Math.random() * parseInt(args[2])) + parseInt(args[1]);
-                        message.channel.send("Saiu o número: " + num);
+                        message.channel.send("Saiu o número / You got the number: " + num);
                     }
     
                 }
