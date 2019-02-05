@@ -357,12 +357,22 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                 
         }
          
+        if(command === prefix + "msg"){
+    
+            if(args[1]){
+                message.channel.send(args.slice(1).join(" "));
+            }
+            else{
+                message.channel.send("Por favor, digite uma mensagem!");
+                }
+            
+        }
                   
        
          //----------------ADMIN COMMANDS------------------------
         
         if(command === prefix+"help") {
-            message.channel.send("**kkk eae men!**\nUse o comando **&ask** para fazer uma pergunta! \nCom o comando **&ship** eu posso te dizer se um ship é bom ou não \nO comando **&matematica** pode te dar algumas instruções de como eu posso te ajudar com matemática!\nSe quiser me mostrar algo use **&olhaso** \nSe quiser minha ajuda pra entender algo use **&vcentendeu**\nPosso respoder aos comandos: **&bomdia**, **&boatarde** ou **&boanoite** de maneira diferente em cada hora do dia!\nPara ver imagens aleatórias digite **&nut** \nPara ver gifs, use **&gif** \nPara ver alguns fun facts você pode usar **&funfacts**");
+            message.channel.send("**kkk eae men!**\nUse o comando **&ask** para fazer uma pergunta! \nCom o comando **&ship** eu posso te dizer se um ship é bom ou não \nO comando **&matematica** pode te dar algumas instruções de como eu posso te ajudar com matemática!\nSe quiser me mostrar algo use **&olhaso** \nSe quiser minha ajuda pra entender algo use **&vcentendeu**\nPosso respoder aos comandos: **&bomdia**, **&boatarde** ou **&boanoite** de maneira diferente em cada hora do dia!\nPara ver imagens aleatórias digite **&nut** \nPara ver gifs, use **&gif** \nPara ver alguns fun facts você pode usar **&funfacts**\nPara brincar de par ou impar, use **&parouimpar**");
          }
 
         if(command === prefix+"ded") {
