@@ -8,7 +8,6 @@ var client = new Discord.Client(); // Criar uma nova Client
 // Configuração
 const config = require('./config.json');
 var prefix = config.prefix;
-var token = config.token; 
 var giveMeAJoke = require('give-me-a-joke');
 
 client.on("ready", function () { // Evento "quando a client estiver pronta/ligada" função:
