@@ -162,7 +162,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
     
                 if (isNaN(args[1]) || isNaN(args[2])) {
     
-                    message.channel.send("<:wat:404459079415889933>");
+                    message.channel.send("ke?");
                     message.channel.send("Desde qnd isso é número véi?");
     
                 }
@@ -170,7 +170,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
     
                     if (parseInt(args[1]) >= parseInt(args[2])) {
     
-                        message.channel.send("<:fred:404438414201454594>");
+                        message.channel.send("'-'");
                         message.channel.send("O número mínimo precisa ser maior que o número máximo, ou vc fugiu da escola?");
     
                     }
