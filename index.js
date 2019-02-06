@@ -89,7 +89,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
            }
            
            
-        if(command === prefix+"look") {
+        if(command === prefix+"olhaso") {
             let replies = ["https://cdn.discordapp.com/attachments/404058102565044234/493839622758072341/WhatsApp_Image_2018-09-24_at_13.46.43.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839621394792448/WhatsApp_Image_2018-09-24_at_13.46.42.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839620526702602/WhatsApp_Image_2018-09-24_at_13.46.47.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839615535349770/WhatsApp_Image_2018-09-24_at_13.46.48.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839273431269387/WhatsApp_Image_2018-09-24_at_13.47.03.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839150546419714/WhatsApp_Image_2018-09-24_at_14.14.53_1.jpeg", "https://cdn.discordapp.com/attachments/404058102565044234/493839199531827216/WhatsApp_Image_2018-09-24_at_14.03.41.jpeg"];
             message.channel.send(replies[Math.floor(Math.random()*replies.length)]);
         
@@ -163,7 +163,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                 if (isNaN(args[1]) || isNaN(args[2])) {
     
                     message.channel.send("wat?");
-                    message.channel.send("Desde qnd isso é número véi? / What kind of number is this? ;v");
+                    message.channel.send("Desde qnd isso é número véi?");
     
                 }
                 else {
@@ -171,12 +171,12 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
                     if (parseInt(args[1]) >= parseInt(args[2])) {
     
                         message.channel.send("'-'");
-                        message.channel.send("O minimo deve ser maior que o maximo! Ou você fugiu da escola? | The minimal number needs to be smaller than the maximum number! Or didnt you go to school?");
+                        message.channel.send("O minimo deve ser maior que o maximo! Ou você fugiu da escola?");
     
                     }
                     else {
                         var num = Math.floor(Math.random() * parseInt(args[2])) + parseInt(args[1]);
-                        message.channel.send("Saiu o número / You got the number: " + num);
+                        message.channel.send("Saiu o número: " + num);
                     }
     
                 }
@@ -184,7 +184,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
     
             }
             else {
-                message.channel.send("Opa!\nUse **" + prefix + "roll** (numero mínimo) (número máximo) pra isso funcionar! \n  \nYoo, use &roll (minimum) (maximum)");
+                message.channel.send("Opa!\nUse **" + prefix + "roll** (numero mínimo) (número máximo) pra isso funcionar!");
             }
     
         }
@@ -411,33 +411,31 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
        
          //----------------ADMIN COMMANDS------------------------
         
-        if(command === prefix+"ajuda") {
+        if(command === prefix+"help") {
             message.channel.send("**kkk eae men!**\nUse o comando **&ask** para fazer uma pergunta! \nCom o comando **&ship** eu posso te dizer se um ship é bom ou não \nO comando **&matematica** pode te dar algumas instruções de como eu posso te ajudar com matemática!\nSe quiser me mostrar algo use **&look** \nSe quiser minha ajuda pra entender algo use **&vcentendeu**\nPosso respoder aos comandos: **&bomdia**, **&boatarde** ou **&boanoite** de maneira diferente em cada hora do dia!\nPara ver imagens aleatórias digite **&nut** \nPara ver gifs, use **&gif** \nPara ver alguns fun facts você pode usar **&funfacts**\nPara brincar de par ou impar, use **&parouimpar**\nDigite **&joke** caso queira ouvir uma piada! OBS: não me responsabilizo por se contorcer de agunia :p\n Use o **&roll** caso queira sortear um numeroh");
          }       
-         if(command === prefix+"helpme") {
-            message.channel.send("**Howdy!**\nUse **&ask** to make a question to me!\nIf you wanna show me something, use  **&look** \nTo see random photos, type **&nut** \nTo see random gifs, use **&gif** \nTo see few funfacts, use **&funfacts**\nType **&joke** if you wanna hear a joke! WARNING: Its not my fault if you die cuz of these jokes :p\n Use **&roll** to get a random number with a custom minimum and maximum :v");
-         } 
+         
         if(command === prefix+"ded") {
             message.channel.send("Online!! :grin: :thumbsup: ");
          }
           if (message.channel.type == "dm") return;
           
           if(command === prefix+"kick") {
-            if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":no_entry: No permission!");
+            if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":no_entry: Sem permissão!");
         
                let expulso = message.mentions.members.first();
                var motivo = args.slice(2).join(" ");
 
-               if(!args[1]) return message.channel.send("Who am i gonna kick? You? Ping the user you wanna kick!(@name)");
+               if(!args[1]) return message.channel.send("Quem eu vou expulsar? Você? Marque quem você quer expulsar!");
 
                var kickEmbed = new Discord.RichEmbed()
-               .setAuthor(expulso.displayName+" got kicked from the server!")
+               .setAuthor(expulso.displayName+" Foi expulso do servidor!")
                .setTitle("Reason: " + motivo)
                .setThumbnail(message.author.avatarURL)
                .setColor("RANDOM");
 
                var NOTreasonEmbed = new Discord.RichEmbed()
-               .setAuthor(expulso.displayName+" got kicked from the server!")
+               .setAuthor(expulso.displayName+" Foi expulso do servidor!")
                .setThumbnail(message.author.avatarURL)
                .setColor("RANDOM");
         
