@@ -397,7 +397,7 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
            });
         }
 
-        if(command === prefix + "mensagemdevatomo"){
+        if(command === prefix + "msg"){
     
             if(args[1]){
                 message.channel.send(args.slice(1).join(" "));
